@@ -1,0 +1,283 @@
+html{
+    padding: 0;
+    margin: 0;
+    background-image: url('image/quiz.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(88, 101, 172);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+h1{
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    background-color: rgba(2, 2, 2, 0.705);
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: rgba(2, 2, 2, 0.705);
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+
+.button{
+    width: 150px;
+    height: 100px;
+    margin: 3px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(88, 101, 172);
+    color: white;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgba(88, 101, 172, 0.877);
+}
+
+#block{
+    margin-bottom: 220px;
+}
+
+#containerStart{
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: rgba(2, 2, 2, 0.705);
+    border-radius: 0 0 20px 20px;
+}
+
+#start{
+    width: 220px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(88, 101, 172);
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    padding:5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    border: none;
+}
+
+#start:hover{
+    background-color: rgb(60, 68, 114);
+}
+
+#question{
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#answer{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#end{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    position:relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    display: none;
+    background-color: rgba(2, 2, 2, 0.705);
+    border-radius: 0 0 20px 20px;
+}
+
+#showNumber{
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+
+#correction_true{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: green;
+    line-height: 30px;
+    margin-top: 30px;
+    background-color: #020202b4;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#correction_false{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(209, 16, 16);
+    line-height: 30px;
+    margin-top: 30px;
+    background-color: rgba(2, 2, 2, 0.705);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 1200px){
+
+    h1{
+        margin-top: 80px;
+    }
+    .container,#containerStart, h1{
+        width: 70%;
+    }
+    #end{
+        width: 70%;
+    }
+    #correction_false{
+        width: 70%;
+    }
+    #correction_true{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 900px){
+    h3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 710px){
+
+    h3{
+        font-size: 25px;
+    }
+    h1{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 550px){
+
+    #answer{
+        width: 100%;
+    }
+
+    .container, #containerStart, h1{
+        width: 90%;
+    }
+    #end{
+        width: 90%;
+    }
+    #correction_false{
+        width: 90%;
+    }
+    #correction_true{
+        width: 90%;
+    }
+    h3{
+        width: 90%;
+    }
+    h1{
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 450px){
+
+    h3{
+        width: 95%;
+        font-size: 20px;
+    }
+    .container, h1, #end, #containerStart{
+        padding: 10px;
+    }
+    #start{
+        width: 200px;
+        font-size: 25px;
+    }
+    .button{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 370px){
+
+    .button{
+        width: 120px;
+        height: 80px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    #start{
+        width: 160px;
+        font-size: 20px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .button{
+        font-size: 13px;
+    }
+    #end{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 350px){
+
+    h3{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 300px){
+
+    .button{
+        width: 112px;
+        height: 70px;
+        font-size: 12px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    #question{
+        font-size: 14px;
+    }
+    #showNumber{
+        font-size: 14px;
+    }
+}
